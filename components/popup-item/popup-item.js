@@ -40,6 +40,7 @@ Component({
         })
       }.bind(this), 200)
     },
+    
     hideModal: function () {
       // 隐藏遮罩层
       let animation = wx.createAnimation({
