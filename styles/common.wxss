@@ -1,0 +1,4 @@
+button::after {
+  border: none;
+  border-radius: 0;
+}

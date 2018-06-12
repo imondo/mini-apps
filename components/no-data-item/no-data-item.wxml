@@ -1,0 +1,18 @@
+<view>
+  <view class='has-data-wrapper'>
+    <slot></slot>
+  </view>
+
+  <view class='no-data-wrapper' hidden=''>
+    <view class='no-data-cover'>
+      <image class='no-data-img' src='/static/images/no_data.png'></image>
+      <view class='no-data-tips'>暂无数据</view>    
+    </view>
+    <view class="weui-footer">
+      <view class="weui-footer__links">
+        <navigator url="" class="weui-footer__link">底部链接</navigator>
+      </view>
+      <view class="weui-footer__text">Copyright © 2008-2018 weui.io</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/setting/setting"
+  ],
+  "tabBar": {
+    "color": "#919191",
+    "selectedColor": "#1186d7",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/icons/db.png",
+        "selectedIconPath": "static/icons/db_on.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "我的",
+        "iconPath": "static/icons/mine.png",
+        "selectedIconPath": "static/icons/mine_on.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2574a9",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#efeff4",
+    "enablePullDownRefresh": false
+  },
+  "networkTimeout": {
+    "request": 10000
+  }
+}

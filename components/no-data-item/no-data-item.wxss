@@ -1,0 +1,12 @@
+.no-data-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.no-data-img {
+  width: 306rpx;
+  height: 237rpx;
+  margin-bottom: 40rpx;
+}

@@ -1,0 +1,29 @@
+.tab-panel-data {
+  height: 100%;
+}
+.no-data-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.no-data-cover {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no-data-img {
+  width: 306rpx;
+  height: 237rpx;
+  margin-bottom: 40rpx;
+}
+.no-data-tips {
+  font-size: 36rpx;
+}
+.footer {
+  position: absolute;
+  bottom: 10rpx;
+  width: 100%;
+}

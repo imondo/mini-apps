@@ -1,0 +1,7 @@
+<view class="item">
+    <view class="item-content {{countIndex === index ? 'delete-active': ''}} {{confimIndex === index?'handle-confim': '' }}" data-index="{{index}}" bindtouchstart="touchStart" bindtouchmove="touchMove">
+      <slot name="before"></slot>
+    </view>
+  <view class="icon delete {{confimIndex === index?'delete-index':''}}" data-index="{{index}}" bindtap="deleteConfim">删除</view>
+  <view class="icon handle-delete {{confimIndex === index?'delete-index':''}}" bindtap="handleDelete">确认删除</view>
+</view>

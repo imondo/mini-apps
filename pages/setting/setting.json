@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的",
+  "navigationBarBackgroundColor": "#1186d7",
+  "navigationBarTextStyle": "light",
+  "usingComponents": {
+    "popup-item": "/components/popup-item/popup-item"
+  }
+}
