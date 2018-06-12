@@ -34,3 +34,7 @@
 1. 引入iconfont文件时，请将ttf文件转成base64格式: [转码地址](https://transfonter.org/)
 
 2. 引入图片时，请先压缩图片，小程序大小限制2M多一点: [在线压缩地址](http://www.yasuotu.com/)
+
+3. 关于input输入数字，可利用type = 'digit'，来控制输入只能是数值和小数点。
+
+4. textare组件键盘遮挡问题。
