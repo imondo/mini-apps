@@ -37,7 +37,7 @@
 
 3. 关于input输入数字，可利用type = 'digit'，来控制输入只能是数值和小数点。
 
-4. textare组件键盘遮挡问题。
+4. textarea组件键盘遮挡问题。
 
 5. ios9报Can't find variable: setCssToHead 错误，有可能是wxs文件不可用es6引起。[问题](https://developers.weixin.qq.com/blogdetail?action=get_post_info&docid=abf5cf90b9ff095159a32f46fc1538fd&highline=setcsstohead&token=570087027&lang=zh_CN)
 
