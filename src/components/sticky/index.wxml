@@ -1,0 +1,5 @@
+<view class="custom-class stcky-wrapper" style="{{ containerStyle }}">
+  <view class="{{ fixed ? 'sticky-fixed' : ''}}" style="{{ wrapStyle }}">
+    <slot />
+  </view>
+</view>

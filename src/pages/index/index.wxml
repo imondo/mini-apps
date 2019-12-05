@@ -1,0 +1,18 @@
+<!-- pages/index/index.wxml -->
+<import src="./template/general.wxml" />
+<import src="./template/computer.wxml" />
+<import src="./template/staff.wxml" />
+<import src="./template/room.wxml" />
+<import src="./template/book.wxml" />
+<view class="index-wrapper">
+  <van-tabs active="{{active}}" custom-class="mini-tab" z-index="{{10}}" swipe-threshold="{{3}}" swipeable bind:change="onChange">
+    <block wx:for="{{tabs}}" wx:key="{{index}}">
+      <van-tab title="{{item.title}}" name="{{item.name}}">
+        <view class="index-wap">
+          <template is="{{item.name}}" wx:if="{{active === index}}" data="{{cardValue: cardValue, bar: bar, tableColumns: tableColumns, tableData: tableData}}"></template>
+        </view>
+      </van-tab>
+    </block>
+  </van-tabs>
+  <back-top wx:if="{{isShowBackTop}}"/>
+</view>

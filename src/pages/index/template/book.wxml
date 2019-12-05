@@ -1,0 +1,18 @@
+<import src="./card.wxml"/>
+<template name="book">
+  <view class="index bg-gray">
+    <view class="index-item bg-fff">
+      <template is="card" data="{{card: ['总馆藏数/册', '生均数/册', '年新增生均数/册'], cardValue}}"></template>
+    </view>
+    <view class="index-item bg-fff">
+      <ec-bar class="mb-50" title="总馆藏册数情况" uom="册" ec-data="{{bar}}"></ec-bar>
+    </view>
+    <view class="index-item bg-fff index-item_table">
+      <view class="item-title">
+        <image class="title__icon text-middle mr-20" src="../../assets/report-icons/home_sub.png"></image>
+        <text class="title__info line-block ft-34 text-middle">各学校总馆藏册数情况</text>
+      </view>
+      <table data="{{tableData}}" columns="{{tableColumns}}" loading="{{loading}}"/>
+    </view>
+  </view>
+</template>

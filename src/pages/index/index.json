@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "ec-bar": "./../../components/ec-bar/index",
+    "table": "./../../components/table/index",
+    "back-top": "./../../components/back-top/index"
+  }
+}

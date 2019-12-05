@@ -1,0 +1,10 @@
+<template name="card">
+  <view class="card">
+    <block wx:for="{{card}}" wx:key="{{index}}">
+      <view class="card-item">
+        <view class="card-text">{{cardValue[index]}}</view>
+        <view class="card-uom">{{item}}</view>
+      </view>
+    </block>
+  </view>
+</template>

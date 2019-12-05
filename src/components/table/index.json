@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ly-sticky": "./../sticky/index",
+    "van-loading": "./../../miniprogram_npm/vant-weapp/loading/index"
+  }
+}

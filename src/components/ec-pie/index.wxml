@@ -1,0 +1,4 @@
+<!--components/ec-pie/index.wxml-->
+<view class="ec-wrapper">
+  <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
+</view>

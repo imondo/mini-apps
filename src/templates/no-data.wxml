@@ -1,0 +1,5 @@
+<template name="noData">
+  <view class="no-data">
+    <text class="no-data__text">暂无数据</text>
+  </view>
+</template>

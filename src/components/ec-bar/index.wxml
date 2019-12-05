@@ -1,0 +1,12 @@
+<view class="ec-wrapper">
+  <view class="bar-title" hover-class="none" hover-stop-propagation="false">
+    <view wx:if="{{title}}" class="title">
+      <image class="title__icon" src="./../../assets/report-icons/home.png"></image>
+      <text class="title__info">{{title}}</text>
+    </view>
+    <view wx:if="{{uom}}" class="uom">单位：{{uom}}</view>
+  </view>
+  <view class="canvas-wrapper">
+    <ec-canvas wx:if="{{ec}}" id="mychart-dom-bar" canvas-id="canvas-bar" ec="{{ ec }}"></ec-canvas>
+  </view>
+</view>

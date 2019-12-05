@@ -1,4 +1,0 @@
-<view class='avatar'>
-  <open-data class="avatar-img" type="userAvatarUrl"></open-data>
-  <open-data type="userNickName" class="name"></open-data>    
-</view>

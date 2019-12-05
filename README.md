@@ -3,10 +3,10 @@
 ### 目录说明
 ```
 |-- api                         // 程序请求
+|-- assets                      // 静态文件 
 |-- components                  // 公用组件
 |-- config                      // 程序基础配置
-|-- pages                       // 程序页面
-|-- static                      // 静态文件   
+|-- pages                       // 程序页面  
 |-- styles                      // 样式文件
 |-- templates                   // 项目模版
 |-- utils                       // 公用JS
@@ -14,20 +14,17 @@
 |-- README.md                   // 项目说明
 |-- app.js                      // 程序入口文件
 |-- app.json                    // 程序公用配置
-|-- app.wxss                    // 程序样式入口
+|-- app.less                    // 程序样式入口
 |-- project.config.json         // 项目配置文件
 
 ```
 
 ### 项目启动
 
-打开 app.js 进行配置
-
 ```
-{
-  process_env: config['dev'], // 测试环境 dev, 生产环境 build
-}
+npm run dev
 
+小程序开发工具 打开dist文件夹
 ```
 
 ### 注意事项

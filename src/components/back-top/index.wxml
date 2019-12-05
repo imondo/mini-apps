@@ -1,0 +1,3 @@
+<view class="back-top" bind:tap="handleClick" hidden="{{fixed}}">
+  <van-icon name="arrow-up" />
+</view>
