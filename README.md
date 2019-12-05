@@ -22,7 +22,9 @@
 ### 项目启动
 
 ```
-npm run dev
+yarn install
+
+yarn dev
 
 小程序开发工具 打开dist文件夹
 ```
