@@ -1,5 +1,3 @@
-const ENCRYPT_KEY = 'lianyitech';
-const CryptoJS = require('./../../lib/crypto-js/index.js');
 const Notify = require('./../../miniprogram_npm/vant-weapp/notify/notify')
   .default;
 
@@ -47,19 +45,13 @@ Page({
   // 用户名加密
   cryptoJSName() {
     const { username, password } = this.data;
-    // const keyHex = CryptoJS.enc.Utf8.parse(ENCRYPT_KEY);
-    // const encrypted = CryptoJS.DES.encrypt(username, keyHex, {
-    //   mode: CryptoJS.mode.ECB,
-    //   padding: CryptoJS.pad.Pkcs7
-    // });
-    // const name = encrypted.toString();
     return { username, password };
   },
   handleLogin() {
     const canDo = this.valdateForm();
     if (!canDo) return;
     const params = this.cryptoJSName();
-    const { node: { loginUrl, nodeUrl }, loading } = this.data;
+    const { node: { loginUrl, nodeUrl } } = this.data;
     this.setData({
       loading: true
     });
@@ -67,15 +59,12 @@ Page({
       this.setData({
         loading: false
       });
-      if (res.access_token) {
+      if (res.token) {
         // 缓存token信息
         auth.set(res).then(() => {
-          api.getEmsContext(nodeUrl).then(res => {
-            this.cacheEmsContext(res);
-            wx.switchTab({
-              url: '/pages/index/index'
-            });
-          })
+          wx.redirectTo({
+            url: '/pages/index/index'
+          });
         });
       }
     }).catch(error => {
@@ -85,11 +74,6 @@ Page({
         loading: false
       });
     });
-  },
-
-  cacheEmsContext(data) {
-    const ems = data.find(v => v.appType === '装备管理');
-    app.Storage.set('emsApi', ems ? ems.url : '');
   },
 
   /**

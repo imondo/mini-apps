@@ -4,7 +4,7 @@
     <ly-sticky offset-top="{{stickyTop}}">
       <view class="thead">
         <view class="tr">
-          <view wx:for="{{configColumns}}" wx:key="{{index}}" wx:for-item="col" class="th">
+          <view wx:for="{{configColumns}}" wx:for-index="index" wx:key="index" wx:for-item="col" class="th">
             <view style="width: {{col.width}}; text-align: {{col.headAlign || 'center'}}" class="cell">
               {{col.lable}}
             </view>
@@ -13,8 +13,8 @@
       </view>
     </ly-sticky>
     <view class="tbody">
-      <view wx:for="{{configList}}" wx:for-item="row" wx:key="{{index}}" class="tr" data-row="{{row}}" bind:tap="handleClickRow">
-        <view wx:for="{{configColumns}}" wx:for-item="col" wx:for-index="colIndex" wx:key="{{colIndex}}" class="td">
+      <view wx:for="{{configList}}" wx:for-item="row" wx:for-index="index" wx:key="index" class="tr" data-row="{{row}}" bind:tap="handleClickRow">
+        <view wx:for="{{configColumns}}" wx:for-item="col" wx:for-index="colIndex" wx:key="colIndex" class="td">
           <view class="cell {{col.cellClassName || ''}}" style="width: {{col.width || ''}}; text-align: {{col.align || 'center'}}">
             {{row[col.prop] || col.placeholder}}
           </view>

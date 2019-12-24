@@ -25,12 +25,9 @@ Page({
     }
   },
   getNodes() {
-    console.log(11);
-    login.getNodes().then(res => {
-      const _node = app.globalData.dev ? res.data.concat(nodeDev) : res.data;
-      this.setData({
-        nodes: _node
-      });
-    });
+    const _node = app.globalData.dev ? [].concat(nodeDev) : [];
+    this.setData({
+      nodes: _node
+    })
   }
 });

@@ -2,15 +2,15 @@
 <template name="general">
   <view class="index bg-gray">
     <view class="index-item bg-fff">
-      <template is="card" data="{{card: ['总资产金额/万元', '当年投入/万元', '生均教学仪器/元'], cardValue}}"></template>
+      <template is="card" data="{{card: ['金额/万元', '当年/万元', '仪器/元'], cardValue}}"></template>
     </view>
     <view class="index-item bg-fff">
-      <ec-bar class="mb-50" title="总资产金额年度" uom="万元" ec-data="{{bar}}"></ec-bar>
+      <ec-bar class="mb-50" title="年度" uom="万元" ec-data="{{bar}}"></ec-bar>
     </view>
     <view class="index-item bg-fff index-item_table">
       <view class="item-title">
         <image class="title__icon text-middle mr-20" src="../../assets/report-icons/home_sub.png"></image>
-        <text class="title__info line-block ft-34 text-middle">各学校总资产情况</text>
+        <text class="title__info line-block ft-34 text-middle">各学校情况</text>
       </view>
       <table data="{{tableData}}" columns="{{tableColumns}}" loading="{{loading}}"/>
     </view>

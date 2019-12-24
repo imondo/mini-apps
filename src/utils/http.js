@@ -85,8 +85,8 @@ class Ajax {
   }
 
   setApiContext(isFullPath, url) {
-    const emsApi = env ? config.ems_api : Storage.get('emsApi');
-    const _url = isFullPath ? url : (emsApi + config.default_api + url);
+    const _api = env ? config.dev_api : config.build_api;
+    const _url = isFullPath ? url : (_api + config.default_api + url);
     return _url;
   }
 
@@ -94,7 +94,7 @@ class Ajax {
     const { errMsg, statusCode, data } = response;
     let message = statusCode ? data.msg || data.message : (errMsg.includes('request:fail') ? '网络异常' : errMsg);
     const token = this.headerToken();
-    if (statusCode === 401 || !token) {
+    if (statusCode === 401) {
       message = '您没有操作权限';
       this.logout();
     }

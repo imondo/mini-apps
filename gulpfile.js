@@ -46,7 +46,7 @@ const image = () => {
   return gulp
     .src(filesPath.image)
     .pipe(imagemin())
-    .pipe(gulp.dest(`${dist}/assets`));
+    .pipe(gulp.dest(`${dist}/`));
 };
 
 gulp.task('image', image);

@@ -4,4 +4,4 @@
 
 const systemInfo = wx.getSystemInfoSync();
 
-module.exports = false; // devtools 开发环境 其他为生产环境
+module.exports = true; // true 开发环境 false 生产环境

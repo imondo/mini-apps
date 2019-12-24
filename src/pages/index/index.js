@@ -11,24 +11,16 @@ Page({
 		ecBarOffset: 0,
 		tabs: [
 			{
-				title: '总资产',
+				title: 'Tab1',
 				name: 'general'
 			},
 			{
-				title: '房间',
+				title: 'Tab2',
 				name: 'room'
 			},
 			{
-				title: '计算机',
+				title: 'Tab3',
 				name: 'computer'
-			},
-			{
-				title: '人员',
-				name: 'staff'
-			},
-			{
-				title: '图书',
-				name: 'book'
 			}
 		],
 		cardValue: ['-', '-', '-'],
@@ -68,16 +60,7 @@ Page({
 		);
 	},
 	getPageInfo() {
-		const { active, tabs } = this.data;
-		const { getAsset, getComputer, getBook, getStaff, getBuilding } = api;
-		const func = {
-			general: getAsset,
-			room: getBuilding,
-			computer: getComputer,
-			staff: getStaff,
-			book: getBook
-		};
-		func[tabs[active]['name']]().then(res => {
+		api.getSummary().then(res => {
 			const { list } = res.data;
 			this.fomartCardData(res.data);
 			this.fomartBarData(list);
@@ -85,19 +68,10 @@ Page({
 	},
 	getTable() {
 		const { pageNo } = this.data;
-		const { getSchoolAsset, getSchoolComputer, getSchoolBook, getSchoolStaff, getSchoolBuilding } = api;
-		const func = {
-			general: getSchoolAsset,
-			room: getSchoolBuilding,
-			computer: getSchoolComputer,
-			staff: getSchoolStaff,
-			book: getSchoolBook
-		};
 		this.setData({
 			loading: true
 		});
-		const key = this.getTabName();
-		func[key]({ pageNo }).then(res => {
+		api.getList({ pageNo }).then(res => {
 			if (res && res.data && Array.isArray(res.data.list)) {
 				this.formartTable(res.data.list);
 				this.setData({
@@ -118,7 +92,7 @@ Page({
 		const key = this.getTabName();
 		const tableColumns = [
 			{
-				lable: '学校/年份',
+				lable: '学校',
 				prop: 'orgName',
 				width: 240,
 				align: 'left',

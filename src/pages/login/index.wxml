@@ -1,14 +1,14 @@
 <view class="login-wrapper">
   <van-notify id="van-notify" />
   <view class="login">
-    <view class="login__title">欢迎登录教育装备管理系统</view>
+    <view class="login__title">微信模板</view>
     <view class="login__container">
       <view class="form-item">
         <view class="label">区域</view>
         <view class="form-control bottom-1px login__node" bind:tap="handleSelectNode">
           <view class="login__node__info">
             <text wx:if="{{node}}">{{node.nodeName}}</text>
-            <text wx:else style="font-size: 28rpx;color: #999999">请选择登录节点</text>
+            <text wx:else style="font-size: 28rpx;color: #999999">请选择节点</text>
           </view>
           <van-icon name="arrow" color="#999"/>
         </view>
@@ -23,6 +23,6 @@
       </view>
     </view>
     <van-button type="info" size="large" loading="{{loading}}" bind:click="handleLogin">登录</van-button>
-    <view class="login__bottom">客服热线：400-690-1580</view>
+    <view class="login__bottom">客服热线：888-888-8888</view>
   </view>
 </view>

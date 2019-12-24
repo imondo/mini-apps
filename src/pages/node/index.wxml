@@ -1,6 +1,6 @@
 <view class="location-wrapper">
   <scroll-view scroll-y class="scroll">
-    <view class="scroll-content bottom-1px" wx:for="{{nodes}}" wx:for-item="item" wx:for-id="item.fon" wx:key="item.fon">
+    <view class="scroll-content bottom-1px" wx:for="{{nodes}}" wx:for-item="item" wx:for-id="index" wx:key="index">
       <view class="node scroll-node" bind:tap="checkNode" data-node="{{item}}">
         {{item.nodeName}}
       </view>
