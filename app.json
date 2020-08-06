@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/scroll/scroll",
     "pages/web/web",
     "pages/index/index",
     "pages/login/index",

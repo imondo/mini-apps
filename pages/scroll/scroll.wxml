@@ -1,0 +1,8 @@
+<view>
+  <view class="head">Head</view>
+  <scroll-view scroll-y="true" style="height: {{scollHeight}}px">
+    <block wx:for="{{20}}" wx:key="index">
+      <view class="scroll-item">item</view>
+    </block>
+  </scroll-view>
+</view>

@@ -11,7 +11,7 @@
   <script>
     /* 注意非小程序环境是不会进入函数内 */
     wx.miniProgram.getEnv(function(res) {
-      if (res.miniProgram) {
+      if (res.miniprogram) {
         wx.miniProgram.navigateTo({
           url: '/page/middle/middle?msg=来字H5'
         });
