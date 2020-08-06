@@ -1,0 +1,47 @@
+/* pages/index/index.wxss */
+.index-wrapper {
+  height: 100%;
+}
+.index-wrapper .index-item {
+  padding: 24rpx 32rpx 32rpx;
+  margin-bottom: 24rpx;
+  background: #fff;
+}
+.index-wrapper .bar-wap {
+  height: 310rpx;
+}
+.index-wrapper .index-item_table {
+  padding: 24rpx 0 32rpx 0;
+}
+.index-wrapper .item-title {
+  padding: 0 0 24rpx 32rpx;
+  font-size: 34rpx;
+  color: #333;
+}
+.index-wrapper .title__icon {
+  width: 53rpx;
+  height: 44rpx;
+}
+.index-wrapper .card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40rpx 0;
+  background-image: linear-gradient(-45deg, #448afe 0%, #2979ff 100%);
+  border-radius: 8rpx;
+}
+.index-wrapper .card .card-item {
+  width: 33.333%;
+  color: #fff;
+  text-align: center;
+}
+.index-wrapper .card .card-text {
+  padding-bottom: 16rpx;
+  font-size: 40rpx;
+}
+.index-wrapper .card .card-uom {
+  font-size: 26rpx;
+}
+.index {
+  background: #F5F6FA;
+}

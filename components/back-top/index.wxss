@@ -1,0 +1,15 @@
+/* components/back-top/index.wxss */
+.back-top {
+  position: fixed;
+  bottom: 10rpx;
+  right: 10rpx;
+  z-index: 110;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  line-height: 90rpx;
+  background: #fff;
+  color: #409eff;
+  text-align: center;
+  box-shadow: 0 0 6rpx rgba(0, 0, 0, 0.12);
+}

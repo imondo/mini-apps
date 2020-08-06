@@ -1,0 +1,30 @@
+/* components/ec-bar/index.wxss */
+.ec-wrapper {
+  width: 100%;
+}
+.ec-wrapper .canvas-wrapper {
+  width: 100%;
+  height: 310rpx;
+}
+.ec-wrapper .bar-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15rpx;
+}
+.ec-wrapper .title__icon {
+  margin-right: 20rpx;
+  width: 53rpx;
+  height: 44rpx;
+  vertical-align: middle;
+}
+.ec-wrapper .title__info {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 34rpx;
+  color: #333333;
+}
+.ec-wrapper .uom {
+  font-size: 28rpx;
+  color: #999999;
+}

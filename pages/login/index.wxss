@@ -1,0 +1,47 @@
+page {
+  background-color: #fff;
+}
+.login {
+  padding: 4.2% 7.5%;
+}
+.login__title {
+  padding-bottom: 60rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 40rpx;
+  color: #222324;
+  letter-spacing: 0;
+}
+.login__container {
+  padding-bottom: 56rpx;
+}
+.login__container .form-item {
+  padding-bottom: 32rpx;
+}
+.login__container .label {
+  font-size: 34rpx;
+  color: #333;
+}
+.login__container .form-control {
+  padding: 24rpx 0;
+}
+.login__container .van-button--large {
+  height: 72rpx;
+  line-height: 72rpx;
+  border-radius: 8rpx;
+  background-color: #448afe;
+}
+.login__node {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login__bottom {
+  position: fixed;
+  bottom: 32rpx;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0;
+}

@@ -1,0 +1,43 @@
+/* components/table/index.wxss */
+.mini-table {
+  display: table;
+  width: 100%;
+  overflow: hidden;
+}
+.mini-table .thead .tr {
+  width: 100%;
+  background: #f5f6fa;
+}
+.mini-table .thead .tr .mini-table .tbody .tr {
+  display: table-row;
+}
+.mini-table .thead .th,
+.mini-table .tbody .td {
+  display: table-cell;
+  padding: 20rpx 0;
+  vertical-align: middle;
+}
+.mini-table .thead .th .cell,
+.mini-table .tbody .td .cell {
+  min-width: 127.5rpx;
+  font-size: 28rpx;
+  color: #333333;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-break: break-all;
+}
+.mini-table.stripe .tbody .tr:nth-of-type(2n) {
+  background: #f5f6fa;
+}
+.mini-table-wrapper {
+  width: 100%;
+}
+.table-loading {
+  text-align: center;
+}

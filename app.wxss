@@ -1,0 +1,224 @@
+/**app.wxss**/
+.mb-8 {
+  margin-bottom: 8rpx;
+}
+.mb-18 {
+  margin-bottom: 18rpx;
+}
+.mb-50 {
+  margin-bottom: 50rpx;
+}
+.mr-20 {
+  margin-right: 20rpx;
+}
+.pl-32 {
+  padding-left: 32rpx;
+}
+.top-1px {
+  position: relative;
+}
+.top-1px:before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #e6e6e6;
+  color: #e6e6e6;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+.bottom-1px {
+  position: relative;
+}
+.bottom-1px:after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1rpx solid #e6e6e6;
+  color: #e6e6e6;
+  transform-origin: 0 100%;
+  transform: scaleY(0.5);
+}
+.left-1px {
+  position: relative;
+}
+.left-1px:before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 1px;
+  border-left: 1rpx solid #e6e6e6;
+  color: #e6e6e6;
+  transform-origin: 0 0;
+  transform: scaleX(0.5);
+}
+.right-1px {
+  position: relative;
+}
+.right-1px:after {
+  content: ' ';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 1px;
+  border-right: 1rpx solid #e6e6e6;
+  color: #e6e6e6;
+  transform-origin: 100% 100%;
+  transform: scaleX(0.5);
+}
+.t-1px {
+  position: relative;
+}
+.t-1px:before {
+  content: ' ';
+  position: absolute;
+  left: 24rpx;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #e6e6e6;
+  color: #e6e6e6;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+.b-1px {
+  position: relative;
+}
+.b-1px:after {
+  content: ' ';
+  position: absolute;
+  left: 24rpx;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1rpx solid #e6e6e6;
+  color: #e6e6e6;
+  transform-origin: 0 100%;
+  transform: scaleY(0.5);
+}
+.all-1px {
+  position: relative;
+}
+.all-1px:after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 1px;
+  border: 1px solid #e6e6e6;
+  color: #e6e6e6;
+  height: 200%;
+  transform-origin: left top;
+  transform: scale(0.5);
+}
+.ellipsisTwo {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+}
+.ellipsisOne {
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.text-middle {
+  vertical-align: middle;
+}
+.ft-34 {
+  font-size: 34rpx;
+}
+.ft-32 {
+  font-size: 32rpx;
+}
+.ft-28 {
+  font-size: 28rpx;
+}
+.ft-26 {
+  font-size: 26rpx;
+}
+.ft-22 {
+  font-size: 22rpx;
+}
+.fc-fff {
+  color: #ffffff;
+}
+.fc-333 {
+  color: #333333;
+}
+.fc-3f {
+  color: #3F3F3F;
+}
+.fc-555 {
+  color: #555555;
+}
+.fc-999 {
+  color: #999999;
+}
+.ly-icon {
+  width: 44rpx;
+  height: 44rpx;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.line-block {
+  display: inline-block;
+}
+.bg-fff {
+  background: #fff;
+}
+.bg-gray {
+  background: #F5F6FA;
+}
+.no-data {
+  text-align: center;
+}
+.no-data .no-data__text {
+  font-size: 26rpx;
+  color: #C0C4CC;
+}
+.mini-table .tbody .td .school-cell {
+  padding-left: 32rpx;
+}
+/*vant rest*/
+/*tab*/
+.mini-tab .van-tab {
+  font-size: 28rpx;
+}
+.mini-tab .van-tab--active {
+  color: #2979ff;
+}
+.mini-tab .van-tabs__line {
+  background-color: #2979ff;
+}
+/*search*/
+.mini-search.van-search {
+  padding: 8rpx 24rpx;
+}
+page {
+  height: 100%;
+}
+.container {
+  padding: 0 32rpx;
+}
+.wrapper-item {
+  margin-bottom: 24rpx;
+  background: #fff;
+}
