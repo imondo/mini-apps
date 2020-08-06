@@ -6,6 +6,7 @@ const auth = require('./utils/auth.js');
 
 App({
   onLaunch: function () {
+    this.expendPage();
     // 登录
     wx.login({
       success: res => {
@@ -39,6 +40,13 @@ App({
     dev,
     userInfo: null,
     node: null // 节点信息
+  },
+  expendPage() {
+    const originalPage = Page;
+    Page = function(config) {
+      config.$storage = Storage;
+      return originalPage(config);
+    }
   },
   Storage, // 本地缓存
   Toast, // 提示
